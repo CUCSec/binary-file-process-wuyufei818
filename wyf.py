@@ -34,16 +34,7 @@ def tamper(student_id):
       f.seek(offset)
 
       f.write(b'\x00\x00\x00')
-
-  for i student_id:
-      v=int(i)
-      if v==0:
-          v=10
-
-    start += v*3
-    yield start
-
-
+      
 def detect():
   with open('lenna.bmp', 'rb') as f:
     bmp_file_header = f.read(14)
